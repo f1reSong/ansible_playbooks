@@ -33,3 +33,8 @@
         - docker-ce
         - docker-ce-cli
         - containerd.io
+    - name: install docker-compose
+      apt:
+        name: docker-compose
+        state: present
+        update_cache: yes
